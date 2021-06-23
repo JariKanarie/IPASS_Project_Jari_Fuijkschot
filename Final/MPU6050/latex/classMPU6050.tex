@@ -1,0 +1,129 @@
+\hypertarget{classMPU6050}{}\section{M\+P\+U6050 Class Reference}
+\label{classMPU6050}\index{M\+P\+U6050@{M\+P\+U6050}}
+
+
+Class for the \hyperlink{classMPU6050}{M\+P\+U6050} acceleration and Gyro sensor.  
+
+
+
+
+{\ttfamily \#include $<$M\+P\+U6050.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classMPU6050_ab01f3365fdb11237fa02852308d67ca7}\label{classMPU6050_ab01f3365fdb11237fa02852308d67ca7}} 
+\hyperlink{classMPU6050_ab01f3365fdb11237fa02852308d67ca7}{M\+P\+U6050} (hwlib\+::i2c\+\_\+bus \&bus)
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{classMPU6050}{M\+P\+U6050}  Initializes the \hyperlink{classMPU6050}{M\+P\+U6050} The constructor requires a hwlib\+::i2c\+\_\+bus\+\_\+bit\+\_\+banged\+\_\+scl\+\_\+sda to be initialized. \end{DoxyCompactList}\item 
+void \hyperlink{classMPU6050_a56a203c7d63199222421ecf82716e992}{Wake\+Me\+Up} ()
+\begin{DoxyCompactList}\small\item\em Wakes up the \hyperlink{classMPU6050}{M\+P\+U6050} for use of Acceleration and Gyro. \end{DoxyCompactList}\item 
+int \hyperlink{classMPU6050_ab33eb589ca8b001745611b1f12d389f6}{Who\+AmI} ()
+\begin{DoxyCompactList}\small\item\em returns the device ID \end{DoxyCompactList}\item 
+int \hyperlink{classMPU6050_a4078364234bcadc11c3872dfad80525b}{get\+AccelX} ()
+\begin{DoxyCompactList}\small\item\em returns the Acceleration X value \end{DoxyCompactList}\item 
+int \hyperlink{classMPU6050_a7314be9b929224469f3c3d1bd81a6247}{get\+AccelY} ()
+\begin{DoxyCompactList}\small\item\em returns the Acceleration Y value \end{DoxyCompactList}\item 
+int \hyperlink{classMPU6050_a6c60f7d16a251a17c3ffc6a5c98ce1d6}{get\+AccelZ} ()
+\begin{DoxyCompactList}\small\item\em returns the Acceleration Z value \end{DoxyCompactList}\item 
+int \hyperlink{classMPU6050_a093f4156b743539f1d399a1965fb2ca0}{get\+GyroX} ()
+\begin{DoxyCompactList}\small\item\em returns the Gyro X value \end{DoxyCompactList}\item 
+int \hyperlink{classMPU6050_a3b677f1d55c966978eeffa560839c3cd}{get\+GyroY} ()
+\begin{DoxyCompactList}\small\item\em returns the Gyro Y value \end{DoxyCompactList}\item 
+int \hyperlink{classMPU6050_ade58d79092bf5311984e39c4cdae2f7b}{get\+GyroZ} ()
+\begin{DoxyCompactList}\small\item\em returns the Gyro Z value \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the \hyperlink{classMPU6050}{M\+P\+U6050} acceleration and Gyro sensor. 
+
+file \hyperlink{MPU6050_8hpp_source}{M\+P\+U6050.\+hpp}
+
+Class that uses the acceleration and Gyro componenents of the \hyperlink{classMPU6050}{M\+P\+U6050} sensor The standard address of the \hyperlink{classMPU6050}{M\+P\+U6050} is 0x68 The \hyperlink{classMPU6050}{M\+P\+U6050} makes use of the hwlib library 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classMPU6050_a4078364234bcadc11c3872dfad80525b}\label{classMPU6050_a4078364234bcadc11c3872dfad80525b}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!get\+AccelX@{get\+AccelX}}
+\index{get\+AccelX@{get\+AccelX}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{get\+Accel\+X()}{getAccelX()}}
+{\footnotesize\ttfamily int M\+P\+U6050\+::get\+AccelX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the Acceleration X value 
+
+return the X value of the acceleration register of the \hyperlink{classMPU6050}{M\+P\+U6050} Returns the address as an I\+NT \mbox{\Hypertarget{classMPU6050_a7314be9b929224469f3c3d1bd81a6247}\label{classMPU6050_a7314be9b929224469f3c3d1bd81a6247}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!get\+AccelY@{get\+AccelY}}
+\index{get\+AccelY@{get\+AccelY}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{get\+Accel\+Y()}{getAccelY()}}
+{\footnotesize\ttfamily int M\+P\+U6050\+::get\+AccelY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the Acceleration Y value 
+
+return the Y value of the acceleration register of the \hyperlink{classMPU6050}{M\+P\+U6050} Returns the address as an I\+NT \mbox{\Hypertarget{classMPU6050_a6c60f7d16a251a17c3ffc6a5c98ce1d6}\label{classMPU6050_a6c60f7d16a251a17c3ffc6a5c98ce1d6}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!get\+AccelZ@{get\+AccelZ}}
+\index{get\+AccelZ@{get\+AccelZ}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{get\+Accel\+Z()}{getAccelZ()}}
+{\footnotesize\ttfamily int M\+P\+U6050\+::get\+AccelZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the Acceleration Z value 
+
+return the Z value of the acceleration register of the \hyperlink{classMPU6050}{M\+P\+U6050} Returns the address as an I\+NT \mbox{\Hypertarget{classMPU6050_a093f4156b743539f1d399a1965fb2ca0}\label{classMPU6050_a093f4156b743539f1d399a1965fb2ca0}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!get\+GyroX@{get\+GyroX}}
+\index{get\+GyroX@{get\+GyroX}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{get\+Gyro\+X()}{getGyroX()}}
+{\footnotesize\ttfamily int M\+P\+U6050\+::get\+GyroX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the Gyro X value 
+
+return the X value of the Gyro register of the \hyperlink{classMPU6050}{M\+P\+U6050} Returns the address as an I\+NT \mbox{\Hypertarget{classMPU6050_a3b677f1d55c966978eeffa560839c3cd}\label{classMPU6050_a3b677f1d55c966978eeffa560839c3cd}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!get\+GyroY@{get\+GyroY}}
+\index{get\+GyroY@{get\+GyroY}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{get\+Gyro\+Y()}{getGyroY()}}
+{\footnotesize\ttfamily int M\+P\+U6050\+::get\+GyroY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the Gyro Y value 
+
+return the Y value of the Gyro register of the \hyperlink{classMPU6050}{M\+P\+U6050} Returns the address as an I\+NT \mbox{\Hypertarget{classMPU6050_ade58d79092bf5311984e39c4cdae2f7b}\label{classMPU6050_ade58d79092bf5311984e39c4cdae2f7b}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!get\+GyroZ@{get\+GyroZ}}
+\index{get\+GyroZ@{get\+GyroZ}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{get\+Gyro\+Z()}{getGyroZ()}}
+{\footnotesize\ttfamily int M\+P\+U6050\+::get\+GyroZ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the Gyro Z value 
+
+return the Z value of the Gyro register of the \hyperlink{classMPU6050}{M\+P\+U6050} Returns the address as an I\+NT \mbox{\Hypertarget{classMPU6050_a56a203c7d63199222421ecf82716e992}\label{classMPU6050_a56a203c7d63199222421ecf82716e992}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!Wake\+Me\+Up@{Wake\+Me\+Up}}
+\index{Wake\+Me\+Up@{Wake\+Me\+Up}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{Wake\+Me\+Up()}{WakeMeUp()}}
+{\footnotesize\ttfamily void M\+P\+U6050\+::\+Wake\+Me\+Up (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Wakes up the \hyperlink{classMPU6050}{M\+P\+U6050} for use of Acceleration and Gyro. 
+
+This wakes up the \hyperlink{classMPU6050}{M\+P\+U6050}. This needs to be done in order to use the functions get\+Accel and get\+Gyro \mbox{\Hypertarget{classMPU6050_ab33eb589ca8b001745611b1f12d389f6}\label{classMPU6050_ab33eb589ca8b001745611b1f12d389f6}} 
+\index{M\+P\+U6050@{M\+P\+U6050}!Who\+AmI@{Who\+AmI}}
+\index{Who\+AmI@{Who\+AmI}!M\+P\+U6050@{M\+P\+U6050}}
+\subsubsection{\texorpdfstring{Who\+Am\+I()}{WhoAmI()}}
+{\footnotesize\ttfamily int M\+P\+U6050\+::\+Who\+AmI (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+returns the device ID 
+
+returns the device ID of the \hyperlink{classMPU6050}{M\+P\+U6050}, which is standard 0x68. This can be used to test wether your connection with the \hyperlink{classMPU6050}{M\+P\+U6050} works. Returns the ID as an I\+NT 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+M\+P\+U6050.\+hpp\item 
+M\+P\+U6050.\+cpp\end{DoxyCompactItemize}
